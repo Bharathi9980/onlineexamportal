@@ -1,0 +1,32 @@
+{% extends 'Navbar/facultynavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block body %}
+
+<h1>This is Faculty Post from Faculty App</h1>
+<div>
+    <div class = "container mt-5">
+        <h3> view exams details form </h3>
+        <form method="post" action="">
+         {% csrf_token %}
+            <div class="form-group">
+                <label for = "examTitle">Exam Title</label>
+                <input type = "text" class = "form-control" name = "examTitle" id = "examTitle" placeholder="Enter the exam Title">
+            </div>
+             <div class="form-group">
+                <label for = "examTitle">Exam fee</label>
+                <input type = "text" class = "form-control" name = "Examfee" id = "Examfee" placeholder="Enter the exam Title">
+            </div>
+
+        </form>
+    </div>
+
+</div>
+{% endblock %}
+</body>
+</html>

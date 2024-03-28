@@ -1,0 +1,2 @@
+def viewsc():
+    return None
